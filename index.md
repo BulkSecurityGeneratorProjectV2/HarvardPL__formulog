@@ -2,7 +2,7 @@ Formulog extends the logic programming language Datalog with mechanisms for cons
 
 ### Publications
 
-**Formulog: Datalog for SMT-Based Static Analysis**  
+**Formulog: Datalog for SMT-Based Static Analysis** ([link](https://dl.acm.org/doi/10.1145/3428209))
 Aaron Bembenek, Michael Greenberg, and Stephen Chong  
 OOPSLA 2020
 
