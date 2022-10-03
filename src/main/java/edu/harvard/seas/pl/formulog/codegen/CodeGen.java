@@ -87,6 +87,9 @@ public class CodeGen {
 			while ((entry = zis.getNextEntry()) != null) {
 				String fileName = entry.getName();
 				Path dest = outDir.toPath().resolve(fileName);
+				if (!dest.normalize().startsWith(outDir.toPath().normalize())) {
+					throw new IOException("Bad zip entry");
+				}
 				if (entry.isDirectory()) {
 					dest.toFile().mkdirs();
 				} else {
